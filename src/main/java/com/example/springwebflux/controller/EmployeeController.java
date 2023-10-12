@@ -44,4 +44,10 @@ public class EmployeeController {
     { return employeeService.deleteEmployee(employeeId);
 
     }
+
+    @DeleteMapping
+    public Mono<Void> deleteAllEmployee()
+    { return employeeService.deleteAllEmployees();
+
+    }
 }
